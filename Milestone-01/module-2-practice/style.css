@@ -1,0 +1,25 @@
+.box-model{
+    width: 200px;
+    height: 100px;
+    background-color: lightcoral;
+}
+
+.with-padding{
+    padding: 20px;
+}
+
+.with-border{
+    border: 5px solid black;
+}
+
+.with-margin{
+    margin: 30px;
+}
+
+.total-size{
+    width: 200px;
+    padding: 10px;
+    border: 2px solid blue;
+    margin: 0;
+    box-sizing: border-box;
+}

@@ -1,0 +1,103 @@
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin: 20px 0;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+nav a.active {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+main {
+    padding: 20px;
+}
+.hero {
+    background-color: #f4f4f4;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+}
+.hero h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+.hero p {
+    font-size: 1.2rem;
+    color: #666;
+}
+.hero button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.02rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.hero button:hover {
+    background-color: #555;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 40px;
+}
+.card {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+}
+.table-container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+table {
+    width: 80%;
+    border-collapse: collapse;
+}
+table > caption {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.form-container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+form {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f4f4f4;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+}

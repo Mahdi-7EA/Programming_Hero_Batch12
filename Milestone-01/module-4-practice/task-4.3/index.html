@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Form</title>
+  </head>
+  <body>
+    <header>
+      <h2>User Registration Form</h2>
+    </header>
+    <main>
+      <form>
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            placeholder="Enter your name"
+          />
+          <br /><br />
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="Enter your email"
+          />
+        </fieldset>
+        <fieldset>
+          <legend>Preferences</legend>
+          <label>Gender:</label>
+          <input type="radio" id="male" name="gender" value="male" />
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">Female</label>
+          <input type="radio" id="other" name="gender" value="other" />
+          <label for="other">Other</label>
+
+          <br /><br />
+
+          <label for="hobbies">Hobbies:</label>
+          <input type="checkbox" id="hobby1" name="hobby" value="reading" />
+          <label for="hobby1"> Reading</label>
+          <input type="checkbox" id="hobby2" name="hobby" value="traveling" />
+          <label for="hobby2"> Traveling</label>
+          <input type="checkbox" id="hobby3" name="hobby" value="Gaming" />
+          <label for="hobby3"> Gaming</label>
+
+          <br /><br />
+
+          <label for="comments">Comments:</label>
+          <br />
+          <textarea
+            id="comments"
+            name="comments"
+            rows="4"
+            cols="50"
+            placeholder="Write your comments here"
+          ></textarea>
+        </fieldset>
+        <br />
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+        <input type="button" value="Cancel" />
+      </form>
+    </main>
+  </body>
+</html>

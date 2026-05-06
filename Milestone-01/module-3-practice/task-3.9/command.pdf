@@ -1,0 +1,31 @@
+📘 Git কমান্ডের সম্পূর্ণ তালিকা (আমরা যেগুলো ব্যবহার ও শিখেছি)
+কমান্ড	ব্যাখ্যা
+git init	বর্তমান ফোল্ডারকে Git রিপোজিটরি হিসেবে initialize করে (.git ফোল্ডার তৈরি করে)
+git status	কোন ফাইল পরিবর্তিত, unstaged বা untracked – তা দেখায়
+git add <filename>	নির্দিষ্ট ফাইলকে staging area-তে যোগ করে
+git add .	সব পরিবর্তিত ও নতুন ফাইল staging area-তে যোগ করে
+git commit -m "message"	staged পরিবর্তনগুলোকে একটি commit হিসেবে সংরক্ষণ করে
+git log	commit ইতিহাস দেখায় (হ্যাশ, লেখক, তারিখ, মেসেজ)
+git log --oneline	commit ইতিহাস সংক্ষেপে এক লাইনে দেখায়
+git branch	লোকাল ব্রাঞ্চের তালিকা দেখায় ও বর্তমান ব্রাঞ্চ চিহ্নিত করে
+git branch <branch-name>	নতুন ব্রাঞ্চ তৈরি করে (সুইচ করে না)
+git checkout <branch-name>	অন্য ব্রাঞ্চে সুইচ করে
+git checkout -b <branch-name>	নতুন ব্রাঞ্চ তৈরি করে এবং তাতে সুইচ করে
+git branch -d <branch-name>	লোকাল ব্রাঞ্চ ডিলিট করে (যদি আগে merge করা থাকে)
+git branch -M <new-name>	বর্তমান ব্রাঞ্চের নাম পরিবর্তন করে (force rename)
+git merge <branch-name>	অন্য ব্রাঞ্চের পরিবর্তনগুলো বর্তমান ব্রাঞ্চে একীভূত করে
+git remote add origin <url>	লোকাল রিপোজিটরিকে রিমোট রেপোর সাথে সংযুক্ত করে (origin নামে)
+git remote -v	সংযুক্ত রিমোট রেপোর URL গুলো দেখায়
+git push -u origin <branch>	প্রথমবার ব্রাঞ্চ পুশ করে এবং আপস্ট্রিম সেট করে
+git push	বর্তমান ব্রাঞ্চের কমিটগুলো রিমোটে পুশ করে (আপস্ট্রিম থাকলে)
+git push origin --delete <branch>	রিমোট থেকে ব্রাঞ্চ ডিলিট করে
+git pull	রিমোট থেকে সর্বশেষ পরিবর্তন এনে merge করে
+git clone <url>	রিমোট রেপোকে লোকালে ক্লোন করে
+git config --global user.name "Your Name"	গ্লোবাল ইউজার নাম সেট করে
+git config --global user.email "email@example.com"	গ্লোবাল ইমেইল সেট করে
+git config --list	সব কনফিগারেশন সেটিংস দেখায়
+বোনাস কমান্ড (আলোচনা করেছি কিন্তু সরাসরি ব্যবহার করিনি):
+
+git switch <branch-name> – git checkout-এর বিকল্প (নতুন ভার্সনে)
+
+git branch -u origin/<branch> – বিদ্যমান ব্রাঞ্চের আপস্ট্রিম সেট করে

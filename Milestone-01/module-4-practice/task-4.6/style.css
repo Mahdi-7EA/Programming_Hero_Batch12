@@ -1,0 +1,23 @@
+.card {
+  width: 300px;
+  height: 200px;
+  background: lightcoral;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  background: lightgreen;
+  width: 300px;
+  height: 200px;
+}
+
